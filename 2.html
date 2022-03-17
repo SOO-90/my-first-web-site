@@ -4,12 +4,9 @@
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
   <style>
-    #active {
-      color:red;
-    }
-    .saw{
-      color:gray;
-    }
+  body{
+    margin:0;
+  }
     a {
       color:black;
       text-decoration: none;
@@ -17,6 +14,25 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0px;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,31 +47,35 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class=" " id="active">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>CSS란 무엇인가?</h2>
-  <p>Cascading Style Sheets (CSS) is a style sheet language used for describ
-    ing the presentation of a document written in a markup language such
-    as HTML. CSS is a cornerstone technology of the World Wide Web, alo
-    ngside HTML and JavaScript.</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS란 무엇인가?</h2>
+      <p>Cascading Style Sheets (CSS) is a style sheet language used for describ
+        ing the presentation of a document written in a markup language such
+        as HTML. CSS is a cornerstone technology of the World Wide Web, alo
+        ngside HTML and JavaScript.</p>
 
-    <p>CSS is designed to enable the separation of presentation and content, inc
-    luding layout, colors, and fonts. This separation can improve content a
-    ccessibility; provide more flexibility and control in the specification of pres
-    entation characteristics; enable multiple web pages to share formatting by spec
-    ifying the relevant CSS in a separate .css file, which reduces complexity and
-    repetition in the structural content; and enable the .css file to be cached to
-     improve the page load speed between the pages that share the file and its formatting.</p>
+        <p>CSS is designed to enable the separation of presentation and content, inc
+        luding layout, colors, and fonts. This separation can improve content a
+        ccessibility; provide more flexibility and control in the specification of pres
+        entation characteristics; enable multiple web pages to share formatting by spec
+        ifying the relevant CSS in a separate .css file, which reduces complexity and
+        repetition in the structural content; and enable the .css file to be cached to
+         improve the page load speed between the pages that share the file and its formatting.</p>
 
-    <p>Separation of formatting and content also makes it feasible to present the
-    same markup page in different styles for different rendering methods, such a
-    s on-screen, in print, by voice (via speech-based browser or screen reader), a
-    nd on Braille-based tactile devices. CSS also has rules for alternate formattin
-    g if the content is accessed on a mobile device.
-  </p>
+        <p>Separation of formatting and content also makes it feasible to present the
+        same markup page in different styles for different rendering methods, such a
+        s on-screen, in print, by voice (via speech-based browser or screen reader), a
+        nd on Braille-based tactile devices. CSS also has rules for alternate formattin
+        g if the content is accessed on a mobile device.
+      </p>
+    </div>
+  </div>
   <p>
     <div id="disqus_thread"></div>
     <script>
