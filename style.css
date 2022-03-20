@@ -2,9 +2,8 @@ body{
   margin:0;
 }
   a {
-    color:#ff8080
-;
-    text-decoration: none;
+    color:#ff8080;
+    text-decoration:none;
   }
   h1 {
     font-size:45px;
@@ -12,8 +11,9 @@ body{
     border-bottom:1px solid gray;
     margin:0;
     padding:20px;
+    padding-top:0px;
   }
-  h1 a{
+  h1 a {
     color:crimson;
   }
   ol {
@@ -22,6 +22,19 @@ body{
     margin:0px;
     padding:20px;
   }
+  .night{
+    padding: 10px;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  .day{
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    }
   #grid{
     display: grid;
     grid-template-columns: 150px 1fr;
