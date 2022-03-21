@@ -10,8 +10,11 @@ body{
     text-align: center;
     border-bottom:1px solid gray;
     margin:0;
-    padding:20px;
+    padding: 20px;
     padding-top:0px;
+  }
+  span{
+    float:left;
   }
   h1 a {
     color:crimson;
@@ -22,14 +25,14 @@ body{
     margin:0px;
     padding:20px;
   }
-  .night{
+  .day{
     padding: 10px;
     margin: 20px;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 0px;
   }
-  .day{
+  .night{
     padding: 10px;
     margin: 20px;
     margin-left: 0;
