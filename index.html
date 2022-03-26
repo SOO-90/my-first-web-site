@@ -6,41 +6,13 @@
   <link rel="stylesheet" href="style.css"
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F13G08YEY1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F13G08YEY1');
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
 <body>
   <h1><span>
   <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      this.value = 'day';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-          alist[i].style.color = 'powderblue';
-          i = i + 1;
-      }
-    }  else {
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      this.value = 'night';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-          alist[i].style.color = '#ff8080';
-          i = i + 1;
-      }
-    }
+    nightDayHandler(this);
   "></span><a href="index.html">WEB</a></h1>
   <div id="grid">
     <ol>
